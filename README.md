@@ -37,35 +37,13 @@ For example : setting up `dotenv` so that we can use the environment variables a
       PORT=3000
   ```
 
-  - Inside the `src/config` folder  create a file named as `config.json` and add this code:
+  - Go inside the `src` folder and execute the following command :
 
   ```
+     npx sequelize init
+  ```
 
-  {
-  "development": {
-    "username": "root",
-    "password": null,
-    "database": "database_development",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  }
-  
-}
-```
+  By executing the above command you will get the migrations and seeders folders along with the config.json file inside the config folder.
 
   - If you are setting up your dev env then write your username of your db and password of your db and in dilect mention whatever db you are using for ex: mysql,mariadb etc
 
